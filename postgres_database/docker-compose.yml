@@ -1,0 +1,10 @@
+version: '3'
+services:
+  db:
+    build:
+      context: .
+      dockerfile: Dockerfile.postgres
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+volumes:
+  dbdata:
